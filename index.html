@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form </title>
+    <link href="./index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div>
+                <img alt="people looking at computer screen" src="./img.jpg"/>
+            </div>
+            <div>
+                <form id="registrationForm">
+                    <div>
+                        <input type="text" name="first" placeholder="first name" />
+                        <input type="text" name="last" placeholder="last name" />
+                    </div>
+                    <div>
+
+                        <input type="text" name="address" placeholder="Address" />
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <span>
+                            <input type="radio" name="gender" value="male" />
+                            <label>male</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="gender" value="female" />
+                            <label>female</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="gender" value="other" />
+                            <label>other</label>
+                        </span>
+
+                    </div>
+                    <div>
+                        <select name="state" id="state">
+                            <option value="volvo">Volvo</option>
+                        </select>
+                        <select name="city" id="city">
+                            <option value="volvo">Volvo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="password" name="pincode" placeholder="Pincode" />
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="email ID" />
+                    </div>
+                    <div>
+                        <input type="text" name="course" placeholder="course" />
+                    </div>
+                    <div>
+                        <input type="submit" value="submit form" />
+                        <button id="resetButton">reset all</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./index.js" />
+
+</html>

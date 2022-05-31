@@ -1,0 +1,19 @@
+.container{
+    width:90%;
+    max-width:90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.container>div{
+    width:50%;
+
+    max-width:50%;
+}
+
+.container div img{
+    width:100%;
+    
+}

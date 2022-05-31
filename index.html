@@ -13,52 +13,58 @@
     <main>
         <section class="container">
             <div>
-                <img alt="people looking at computer screen" src="./img.jpg"/>
+                <img alt="people looking at computer screen" src="./img.jpg" />
             </div>
             <div>
                 <form id="registrationForm">
                     <div>
-                        <input type="text" name="first" placeholder="first name" />
-                        <input type="text" name="last" placeholder="last name" />
+                        <input type="text" name="first" placeholder="first name" required/>
+                        <input type="text" name="last" placeholder="last name" required/>
                     </div>
                     <div>
 
-                        <input type="text" name="address" placeholder="Address" />
+                        <input type="text" name="address" placeholder="Address" required/>
                     </div>
-                    <div>
+                    <div class="d-flex">
                         <label>Gender:</label>
-                        <span>
-                            <input type="radio" name="gender" value="male" />
-                            <label>male</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="gender" value="female" />
-                            <label>female</label>
-                        </span>
-                        <span>
-                            <input type="radio" name="gender" value="other" />
-                            <label>other</label>
-                        </span>
+                        <div>
+                            <span>
+                                <input type="radio" name="gender" value="male" required/>
+                                <label>male</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="gender" value="female" required/>
+                                <label>female</label>
+                            </span>
+                            <span>
+                                <input type="radio" name="gender" value="other" required/>
+                                <label>other</label>
+                            </span>
 
+                        </div>
                     </div>
                     <div>
-                        <select name="state" id="state">
-                            <option value="volvo">Volvo</option>
+                        <select name="state" id="state" required>
+                            <option></option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Turkey">Turkey</option>
+
                         </select>
-                        <select name="city" id="city">
-                            <option value="volvo">Volvo</option>
+                        <select name="city" id="city" required>
+                            <option ></option>
                         </select>
                     </div>
                     <div>
-                        <input type="password" name="pincode" placeholder="Pincode" />
+                        <input type="password" name="pincode" placeholder="Pincode" required/>
                     </div>
                     <div>
-                        <input type="email" name="email" placeholder="email ID" />
+                        <input type="email" name="email" placeholder="email ID" required/>
                     </div>
                     <div>
                         <input type="text" name="course" placeholder="course" />
                     </div>
-                    <div>
+                    <div class="d-flex justify-end">
                         <input type="submit" value="submit form" />
                         <button id="resetButton">reset all</button>
                     </div>
@@ -68,6 +74,5 @@
         </section>
     </main>
 </body>
-<script src="./index.js" />
-
+<script src="./index.js"></script>
 </html>

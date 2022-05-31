@@ -1,19 +1,47 @@
-.container{
-    width:90%;
-    max-width:90%;
+body * {
+    text-transform: capitalize;
+}
+
+.container {
+    width: 90%;
+    max-width: 90%;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
 }
 
-.container>div{
-    width:50%;
-
-    max-width:50%;
+.container>div {
+    width: 50%;
+    display: inline-block;
+    max-width: 50%;
 }
 
-.container div img{
-    width:100%;
-    
+.container div img,
+.container div form {
+    width: 100%;
+
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex>* {
+    display: inline-block;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+
+}
+.justify-space-around {
+    justify-content: space-around;
+
+}
+
+.justify-end {
+    justify-content: end;
+
 }

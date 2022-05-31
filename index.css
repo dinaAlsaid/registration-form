@@ -2,6 +2,9 @@ body * {
     text-transform: capitalize;
 }
 
+body{
+    background-color: midnightblue;
+}
 .container {
     width: 90%;
     max-width: 90%;
@@ -9,7 +12,8 @@ body * {
     display: flex;
     flex-wrap: wrap;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px grey;
+    background-color: whitesmoke;
+
 }
 
 .container>div {
@@ -36,6 +40,7 @@ body * {
     justify-content: space-between;
 
 }
+
 .justify-space-around {
     justify-content: space-around;
 
@@ -43,5 +48,28 @@ body * {
 
 .justify-end {
     justify-content: end;
+
+}
+
+input,
+select {
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    color: whitesmoke;
+}
+
+input[type="submit"],
+button#resetButton {
+    padding: 0.7rem;
+
+    border: none;
+    margin: 0.5rem ;
+    box-shadow: 0px 0px 7px grey;
 
 }

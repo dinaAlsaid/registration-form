@@ -1,78 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration form </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
     <link href="./index.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="container">
-            <div>
-                <img alt="people looking at computer screen" src="./img.jpg" />
+      <section class="container">
+        <div class="bg-img"></div>
+        <div>
+          <form id="registrationForm">
+            <legend>Student Registration form</legend>
+            <div class="flex-wrap">
+              <input type="text" name="first" placeholder="first name" required />
+              <input type="text" name="last" placeholder="last name" required />
             </div>
             <div>
-                <form id="registrationForm">
-                    <div>
-                        <input type="text" name="first" placeholder="first name" required/>
-                        <input type="text" name="last" placeholder="last name" required/>
-                    </div>
-                    <div>
-
-                        <input type="text" name="address" placeholder="Address" required/>
-                    </div>
-                    <div class="d-flex">
-                        <label>Gender:</label>
-                        <div>
-                            <span>
-                                <input type="radio" name="gender" value="male" required/>
-                                <label>male</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="gender" value="female" required/>
-                                <label>female</label>
-                            </span>
-                            <span>
-                                <input type="radio" name="gender" value="other" required/>
-                                <label>other</label>
-                            </span>
-
-                        </div>
-                    </div>
-                    <div>
-                        <select name="state" id="state" required>
-                            <option></option>
-                            <option value="Jordan">Jordan</option>
-                            <option value="Saudi Arabia">Saudi Arabia</option>
-                            <option value="Turkey">Turkey</option>
-
-                        </select>
-                        <select name="city" id="city" required>
-                            <option ></option>
-                        </select>
-                    </div>
-                    <div>
-                        <input type="password" name="pincode" placeholder="Pincode" required/>
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="email ID" required/>
-                    </div>
-                    <div>
-                        <input type="text" name="course" placeholder="course" />
-                    </div>
-                    <div class="d-flex justify-end">
-                        <input type="submit" value="submit form" />
-                        <button id="resetButton">reset all</button>
-                    </div>
-
-                </form>
+              <input type="text" name="address" placeholder="Address" required />
             </div>
-        </section>
+            <div class="justify-start flex-wrap">
+              <label>Gender:</label>
+              <span>
+                <input type="radio" name="gender" value="male" required />
+                <label>male</label>
+              </span>
+              <span>
+                <input type="radio" name="gender" value="female" required />
+                <label>female</label>
+              </span>
+              <span>
+                <input type="radio" name="gender" value="other" required />
+                <label>other</label>
+              </span>
+            </div>
+            <div class="flex-wrap">
+              <select name="state" id="state" required>
+                <option></option>
+                <option value="Jordan">Jordan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Turkey">Turkey</option>
+              </select>
+              <select name="city" id="city" required>
+                <option></option>
+              </select>
+            </div>
+            <div>
+              <input type="password" name="pincode" placeholder="Pincode" required />
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="email ID" required />
+            </div>
+            <div>
+              <input type="text" name="course" placeholder="course" />
+            </div>
+            <div class="justify-end">
+              <input type="submit" value="submit form" />
+              <button id="resetButton">reset all</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
-<script src="./index.js"></script>
+  </body>
+  <script src="./index.js"></script>
 </html>

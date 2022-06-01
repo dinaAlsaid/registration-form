@@ -1,10 +1,41 @@
 body * {
     text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: midnightblue;
+body {
+    background-color: rgb(37, 37, 39);
 }
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex>* {
+    display: inline-block;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.justify-space-between {
+    justify-content: space-between !important;
+
+}
+
+.justify-end {
+    justify-content: end !important;
+
+}
+
+.justify-start {
+    justify-content: start !important;
+
+}
+
 .container {
     width: 90%;
     max-width: 90%;
@@ -16,38 +47,81 @@ body{
 
 }
 
+.container legend {
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
 .container>div {
     width: 50%;
     display: inline-block;
     max-width: 50%;
 }
 
-.container div img,
+.container>div:first-child {
+    border-start-start-radius: inherit;
+    border-end-start-radius: inherit;
+    order: 1;
+}
+
+.container>div:last-child {
+    order: 2;
+
+}
+
+
 .container div form {
     width: 100%;
 
 }
 
-.d-flex {
+.bg-img {
+    background-image: url("./img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container form {
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container form>div {
     display: flex;
-}
-
-.d-flex>* {
-    display: inline-block;
-}
-
-.justify-space-between {
+    width: 100%;
     justify-content: space-between;
 
 }
 
-.justify-space-around {
-    justify-content: space-around;
+.container form>div input[type="text"],
+.container form>div input[type="password"],
+.container form>div input[type="email"],
+.container form>div select {
+    width: 100%;
+}
+
+.container form>div.flex-wrap>select,
+.container form>div.flex-wrap>input {
+    width: 50%;
 
 }
 
-.justify-end {
-    justify-content: end;
+@media screen and (max-width: 760px) {
+
+    .container form>div.flex-wrap>select,
+    .container form>div.flex-wrap>input {
+        width: 100%;
+
+    }
+
+}
+
+.container form>div label {
+    margin: 0.5rem 0;
 
 }
 
@@ -57,6 +131,7 @@ select {
     padding: 0.7rem;
     border-radius: 5px;
     border: 1px solid lightgray;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -65,11 +140,60 @@ input[type="submit"] {
 }
 
 input[type="submit"],
-button#resetButton {
+#resetButton {
     padding: 0.7rem;
-
+    text-transform: capitalize;
     border: none;
-    margin: 0.5rem ;
-    box-shadow: 0px 0px 7px grey;
+    margin: 0.5rem;
+    box-shadow: 0px 0px 7px rgb(197, 197, 197);
+
+}
+
+.popup {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    z-index: 99;
+    display: flex;
+    border-radius: 5px;
+    width: 20vw;
+    height: 100px;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.popup.invalid {
+    background-color: rgb(236, 146, 118);
+}
+.popup.valid {
+    background-color: rgb(145, 236, 118);
+}
+
+
+@media screen and (min-width: 480px)and (max-width:760px) {
+    .container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .container>div {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .bg-img {
+        background-image: none;
+    }
+
 
 }
